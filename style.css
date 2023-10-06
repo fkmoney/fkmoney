@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav {
+    width: 100%;
+    background: #f6f6f6; 
+    height: 10vh; 
+    position: fixed;
+    position: -webkit-sticky;
+    overflow: hidden;
+    background: #f6f6f6;
+}
+
+header {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+ul {
+    gap: 40px;
+    display: flex;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+li a {
+    letter-spacing: 4px;
+}
+
+.head-img {
+    background-image: url('img/architect\ \(1\).jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head-img p {
+    color: #fff !important;
+    text-align: center;
+    padding-top: 290px;
+    font-size: 32px;
+    line-height: 2;
+    letter-spacing: 4px;
+}
+
+.head-img span {
+    color: #fff!important;
+    background-color: #000!important;
+    padding: 8px 16px;
+    opacity: 0.75;
+}
+
+.house {
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.houses,
+.housess {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-color: #f1f1f1!important;
+}
+
+.houses {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.housess {
+    border-top: 1px solid #ccc!important;
+    padding-top: 50px;
+}
+
+.house p {
+    padding-top: 20px;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.houses p,
+.housess p {
+    font-size: 15px;
+}
+
+
+.sec-img {
+    width: 24%;
+}
+
+.sec-img p {
+    position: absolute;
+    padding: 8px 16px!important;
+    background: #000;
+    color: white;
+    outline: none;
+}
+
+.sec-img img {
+    width: 100%;
+}
+
+.about {
+    padding-top: 60px;
+    width: 95%;
+    margin: auto;
+    font-family: "Segoe UI",Arial,sans-serif !important;
+}
+
+.abouts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about h1 {
+    padding-bottom: 35px;
+    font-weight: 400;
+}
+
+.about p {
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    padding-top: 10px;
+}
+
+.aboutee {
+    padding-top: 50px;
+    width: 24%;
+}
+
+.aboutee img {
+    width: 100%;
+}
+
+.john h1 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.john h4 {
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.aboutee p {
+    padding-top: 15px;
+    width: 100%;
+}
+
+.btn button {
+    width: 100%;
+    color: #000;
+    background-color: #f1f1f1!important;
+    border: none;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+.contact {
+    width: 95%;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.contact h1 {
+    padding-bottom: 35px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.contact p {
+    padding-top: 10px;
+    border-top: 1px solid #ccc!important;
+}
+
+.input1 input{
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: 17px;
+    border: 1px solid #ccc!important;
+}
+
+.input1 input::placeholder {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.btns {
+    margin-top: 35px;
+}
+
+.btns button {
+    background: #000;
+    color: #f1f1f1;
+    padding: 10px 20px;
+}
+
+.map {
+    width: 95%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.map img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer {
+    background: #000;
+    height: 15vh;
+    margin-top: 7px;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 35px;
+    color: #FFF;
+}
+
+.footer span {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 488px) {
+
+    ul {
+        display: none;
+    }
+
+    .head-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .houses,
+    .housess {
+        flex-direction: column;
+    }    
+    
+    .sec-img {
+        width: 100%;
+    }
+
+    .abouts {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .aboutee {
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1!important;
+        border-radius: 30px;
+    }
+
+    .john h1,
+    .john h4,
+    .john p {
+        padding-left: 20px;
+    }
+
+    .john p {
+        width: 95%;
+    }
+
+    .footer {
+        margin-top: 2px;
+        height: 10vh;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
